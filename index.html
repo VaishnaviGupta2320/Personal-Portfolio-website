@@ -52,6 +52,16 @@
             margin: 30px 0;
         }
 
+        .leftsection .btn{
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 40px 0;
+        }
         .rightsection img{
             width: 80%;
         }
@@ -85,7 +95,7 @@
         .secondSection{
             max-width: 80vw;
             margin: auto;
-            height: 80vh;
+            height: 60vh;
         }
 
         .secondSection .box{
@@ -94,7 +104,151 @@
             height: 2px;
             margin: 56px 0;
         }
-    </style>
+
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 600px;
+        }
+        .image-top{
+            width: 50px;
+            position: relative;
+            top: -50px;
+            left: -12px;
+
+        }
+.vertical-title{
+    position: relative;
+    top: 45px;
+    width: 150px;
+
+}
+
+.title-desc{
+    position: relative;
+    top: 60px;
+    color: gray;
+    width: 150px;
+    font-size: 15px;
+
+}
+
+.thirdSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .thirdSection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        
+        }
+
+        .thirdSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+            
+        }
+
+        .project-title{
+    position: relative;
+    top: 60px;
+    width: 150px;
+
+}
+
+.project-desc{
+    position: relative;
+    top: 80px;
+    color: gray;
+    width: 150px;
+    font-size: 15px;
+
+}
+footer{
+    background-color: #202042;
+    /* height: 233px; */
+}
+
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer >div{
+    width: 223px;
+}
+
+footer .text-centre{
+    text-align: center;
+    color: gray;
+    padding: 15px 0;
+}
+
+@media screen and (max-width: 1300px)
+{
+    body{
+        min-width: fit-content;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .secondSection .vertical{
+        height: unset;
+        margin: 0 200px;
+    }
+    .secondSection .box{
+        width: 50vw;
+    }
+    .vertical-title, .title-desc{
+        left: 45x;
+        top: 45px;
+    }
+    footer{
+        display: none;
+    }
+    .firstsection{
+        flex-direction: column-reverse;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .thirdSection .box{
+        width: 50vw;
+    }
+    .project-title, .project-desc{
+        left: 60px;
+        top: 60px;
+    }
+    .thirdSection .vertical{
+        height: unset;
+        margin: 0 200px;
+}
+.leftsection{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightsection{
+    width: 72% !important;
+}
+   
+}</style>
 </head>
 <body>
     <header>
@@ -119,6 +273,10 @@
                 <div>and I am a Passionate</div>
                 <!-- <div>Web Developer.</div> -->
                 <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
             </div>
             <div class="rightsection">
                 <img src="bg.png.png" alt="">
@@ -128,9 +286,101 @@
         <section class="secondSection">
             <span class="text-gray">What I have done so far...</span>
             <h1>Work Experience</h1>
-            <div class="box"></div>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="syseng.png" alt="">
+                    <div class="vertical-title">
+                        System Engineer (2021-2023)
+                    </div>
+                    <div class="title-desc">
+                        I am working in TCS as a system engineer.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="thirdSection">
+            <span class="text-gray">What I have created so far...</span>
+            <h1>My Projects</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="htmlcssjs.png" alt="">
+                    <div class="project-title">
+                        TODO List
+                    </div>
+                    <div class="project-desc">
+                        I have created a todo list project using HTML, CSS, Javascript and bootstrap. In this one can add all the activities one has to perform and delete as well.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="htmlcssjs.png" alt="">
+                    <div class="project-title">
+                        Amazon Clone
+                    </div>
+                    <div class="project-desc">
+                        I have created a Amazon clone of amazon.com website using HTML and CSS. 
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="htmlcssjs.png" alt="">
+                    <div class="project-title">
+                        Digital Clock Project
+                    </div>
+                    <div class="project-desc">
+                        I have created a digital clock project which displays the current time as well as date and day. I have created this project using HTML, CSS, Javascript and Bootstrap.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="htmlcssjs.png" alt="">
+                    <div class="project-title">
+                        Personal Portfolio Website
+                    </div>
+                    <div class="project-desc">
+                        I have created a Personal portfolio website which will display all the information related me like work experience, projects, skills etc.
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Vaishnavi's Portfolio website</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-centre">
+            Copyright &#169; vaishnaviportfolio.com | All rights reserved
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
